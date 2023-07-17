@@ -1,0 +1,27 @@
+ images: ubuntu
+
+stages:
+  - pull
+  - build
+  - test 
+  - deploy
+
+pullstage:
+ stage: pull
+ script:
+   - echo "pull completed"
+
+buildstage:
+ stage: build
+ script:
+   - echo "build completed"
+
+teststage:
+ stage: test
+ script:
+   - echo "test completed"   
+
+deploystage:
+ stage: deploy
+ script:
+   - echo "deploy completed"   
